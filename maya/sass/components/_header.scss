@@ -1,0 +1,31 @@
+header {
+	display: table;
+	@extend .bg-img;
+
+}
+
+.header-container {
+	@extend .tbl-cell;
+	.header-content {
+		text-align: center;
+		padding: 20px;
+		color: $white;
+		h1 {
+			font-size: 35px;
+			margin: 20px 0;
+		}
+
+		hr {
+			max-width: 50px;
+			margin: 30px auto;
+			border: 2px solid $c-primary;
+			border-radius: 2px;
+		}
+
+		p {
+			font-size: 20px;
+			color: #eee;
+			margin: 20px 0;
+		}
+	}
+}

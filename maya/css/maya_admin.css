@@ -1,0 +1,38 @@
+.maya_container h2, .maya_container h3, .maya_container  {
+	color: #fff;
+}
+
+.maya-theme-profile, .maya-general-form {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.maya-theme-profile {
+	width: 280px;
+	padding: 20px;
+	margin-right: 20px;
+	margin-top: 20px;
+	text-align: center;
+	background-color: #1F1F1F;
+}
+
+.profile-image {
+	width: 122px;
+	height: 122px;
+	margin: 20px auto;
+	border-radius: 50%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#maya-custom-css {
+	width: 400px;
+	height: 400px;
+
+}
+
+#mayacustomcss {
+	display: hidden;
+	visibility: hidden;
+}

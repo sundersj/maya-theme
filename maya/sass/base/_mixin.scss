@@ -1,0 +1,55 @@
+@mixin animate($attr:all, $time: 320ms, $flow: ease) {
+	-webkit-transition: $attr $time $flow;
+	-moz-transition: $attr $time $flow;
+	-ms-transition: $attr $time $flow;
+	-o-transition: $attr $time $flow;
+	transition: $attr $time $flow;
+}
+
+@mixin transform($attr) {
+	-webkit-transform : $attr;
+	-moz-transform: $attr;
+	-ms-transform: $attr;
+	-o-transform: $attr;
+	transform: $attr;
+}
+
+@keyframes reveal {
+	form {
+			opacity: 0;
+			@include transform(translateY(-100%));
+	}
+	 to {
+		opacity: 1;
+		@include transform(translateY(0));
+	 }
+}
+
+
+@mixin animation-name($name, $time:1s, $flow:linear, $iteration:infinite) {
+-webkit-animation:$name $time $iteration $flow;
+-moz-animation: $name $time $iteration $flow;
+-o-animation: $name $time $iteration $flow;
+animation: $name $time $iteration $flow;
+}
+
+@keyframes reveal {
+  from {
+	@include transform(translateY(-100%));
+  }
+
+  to {
+    opacity: 1;
+    @include transform(translateY(0));
+  }
+}
+
+@keyframes spin {
+  from {
+	@include transform(rotate(0));
+  }
+
+  to {
+    @include transform(rotate(360deg));
+  }
+}

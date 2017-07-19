@@ -1,0 +1,26 @@
+@media only screen and (min-width: 768px) {
+	.nav-links {
+		> div {
+			flex-basis: 50% !important;
+			text-align: left !important;
+			padding: 10px 5px;
+		}
+		.nav-next {
+		text-align: right !important;
+		}
+	}
+
+	.share-box {
+			text-align: left;
+		.social-networks, h4 {
+			flex-basis: 50%;
+		}
+		.social-networks {
+			text-align: right;
+		}
+	}
+
+	aside {
+		margin: 20px;
+	}
+}

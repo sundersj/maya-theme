@@ -1,0 +1,22 @@
+/* footer section*/
+
+footer {
+	padding: 50px 0;
+	background-color: $footermid-bg-color;
+	color: $footermid-color;
+	border-top: 10px solid #f8f8f8;
+}
+
+.maya-typo-footer {
+	padding: 20px;
+	background-color: $footerend-bg-color;
+	border-top: 1px solid $footerend-b-color;
+	color: $white;
+	font-size: 12px;
+	a {
+		color: rgba(32, 148, 243, 0.71);
+		&:hover, &:focus {
+			color:rgba(32, 148, 243, 1);
+		}
+	}
+}
