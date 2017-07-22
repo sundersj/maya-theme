@@ -24,7 +24,7 @@
 	<nav id="mainNav" class="navbar navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-				<h2<a class="navbar-brand maya-logo" href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a>
+				<a class="navbar-brand maya-logo" href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a>
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                		<i class="fa fa-list"></i>
                 </button>

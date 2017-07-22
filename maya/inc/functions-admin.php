@@ -8,7 +8,6 @@
 
 function maya_add_admin_menu() {
 	add_menu_page( 'Maya Theme Options', 'Maya Theme', 'manage_options', 'maya_theme', 'maya_theme_create_page', '', 110 );
-
 	add_submenu_page('maya_theme', 'General', 'General', 'manage_options', 'maya_theme', 'maya_theme_create_page');
 	add_submenu_page('maya_theme', 'Theme Options', 'Theme Options', 'manage_options', 'maya_theme_options', 'maya_theme_support_page');
 	add_submenu_page('maya_theme', 'CSS Options', 'Custom CSS', 'manage_options', 'maya_theme_custom_css', 'maya_theme_custom_css');
