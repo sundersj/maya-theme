@@ -21,16 +21,15 @@ if( !empty( $options ) ) {
 
 /* THEME CUSTOM BACKGROUND */
 
-$header = esc_attr( get_option( 'maya_custom_header' ) );
-if($header == 1) {
-	$args = array(
+//$header = esc_attr( get_option( 'maya_custom_header' ) );
+
+$args = array(
 		'width'         => 100,
 		'height'        => 500,
 		'default-image' => get_template_directory_uri() . '/images/header.jpg',
 		'uploads'       => true
 	);
 	add_theme_support( 'custom-header', $args );
-}
 /* THEME CUSTOM BACKGROUND */
 
 $background = esc_attr( get_option( 'maya_custom_background' ) );
@@ -124,6 +123,7 @@ function maya_contact_custom_column( $column, $post_id ){
 function maya_contact_add_meta_box() {
 	add_meta_box( 'contact_email', 'User Email', 'maya_contact_email_callback', 'maya-contact', 'side', 'high' );
 }
+
 
 function maya_contact_email_callback( $post ) {
 	wp_nonce_field( 'maya_save_contact_email_data', 'maya_contact_email_meta_box_nonce' );

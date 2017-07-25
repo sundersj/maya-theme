@@ -16,9 +16,10 @@
 	<?php
 		wp_head();
 		$css = get_option('maya_custom_css');
-		if(!empty($css)) { ?>
-		 <style><?php echo $css; ?></style>
-	<?php } ?>
+		if(!empty($css)) {
+		 echo '<style type="text/css">'.$css.'</style>';
+	 	}
+	?>
 </head>
 <body <?php body_class();  ?>>
 	<nav id="mainNav" class="navbar navbar-fixed-top">

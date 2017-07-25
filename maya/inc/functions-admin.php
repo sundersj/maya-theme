@@ -58,7 +58,7 @@ function maya_custom_settings() {
 	add_settings_section( 'theme-post-formart-options', 'Theme Support Options', 'maya_theme_support_options', 'maya_theme_options');
 
 	add_settings_field( 'theme-post-formats', 'Post formats', 'maya_theme_post_formats', 'maya_theme_options', 'theme-post-formart-options');
-	add_settings_field( 'theme-custom-header', 'Custom Header', 'maya_theme_custom_header', 'maya_theme_options', 'theme-post-formart-options');
+	//add_settings_field( 'theme-custom-header', 'Custom Header', 'maya_theme_custom_header', 'maya_theme_options', 'theme-post-formart-options');
 	add_settings_field( 'theme-custom-background', 'Custom Background', 'maya_theme_custom_background', 'maya_theme_options', 'theme-post-formart-options');
 	add_settings_field( 'theme-custom-contact-form', 'Contact Form', 'maya_theme_custom_contact_form', 'maya_theme_options', 'theme-post-formart-options');
 

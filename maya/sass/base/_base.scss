@@ -431,27 +431,24 @@ a {
 	}
 }
 
-.contact-box {
+.form-outer-box {
 	margin-top: 20px;
-	#maya-contact-form {
+	.maya-form {
 		.form-group {
-			.form-control, #btn-contact {
+			.form-control, .maya-btn-submit {
 				border-radius: 0;
 				border: 1px solid #ddd;
 			}
 
 			p {
+				position: relative;
 				padding: 7px 20px;
 				font-size: 12px;
-				opacity: 0;
 				color: #fff;
 				border: 1px solid #ddd;
 				margin-top: 10px;
 				background-color: #2196F3;
-				position: relative;
-				z-index: -1;
-				@include animate(all, 1s, ease);
-				@include transform(translateY(-100%));
+				display: none;
 
 				&:before, &:after {
 					content: '';
@@ -472,11 +469,6 @@ a {
 					border: 10px solid transparent;
 					border-bottom: 10px solid #2196F3;
 				}
-
-				&.reveal {
-					opacity: 1;
-					@include transform(translateY(0));
-				}
 			}
 		}
 
@@ -489,7 +481,7 @@ a {
 			position: relative;
 			width: 100%;
 			text-align: center;
-			#btn-contact {
+			.maya-btn-submit {
 				color: $white;
 				background-color: $lightGreen;
 				border: none;

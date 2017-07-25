@@ -573,35 +573,24 @@ a:hover, a:focus {
   color: #fff;
 }
 
-.contact-box {
+.form-outer-box {
   margin-top: 20px;
 }
-.contact-box #maya-contact-form .form-group .form-control, .contact-box #maya-contact-form .form-group #btn-contact {
+.form-outer-box .maya-form .form-group .form-control, .form-outer-box .maya-form .form-group .maya-btn-submit {
   border-radius: 0;
   border: 1px solid #ddd;
 }
-.contact-box #maya-contact-form .form-group p {
+.form-outer-box .maya-form .form-group p {
+  position: relative;
   padding: 7px 20px;
   font-size: 12px;
-  opacity: 0;
   color: #fff;
   border: 1px solid #ddd;
   margin-top: 10px;
   background-color: #2196F3;
-  position: relative;
-  z-index: -1;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
-  -webkit-transform: translateY(-100%);
-  -moz-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  -o-transform: translateY(-100%);
-  transform: translateY(-100%);
+  display: none;
 }
-.contact-box #maya-contact-form .form-group p:before, .contact-box #maya-contact-form .form-group p:after {
+.form-outer-box .maya-form .form-group p:before, .form-outer-box .maya-form .form-group p:after {
   content: '';
   display: block;
   position: absolute;
@@ -609,41 +598,33 @@ a:hover, a:focus {
   left: 10px;
   pointer-events: none;
 }
-.contact-box #maya-contact-form .form-group p:before {
+.form-outer-box .maya-form .form-group p:before {
   border: 12px solid transparent;
   border-bottom: 12px solid #ddd;
   margin-left: -2px;
 }
-.contact-box #maya-contact-form .form-group p:after {
+.form-outer-box .maya-form .form-group p:after {
   border: 10px solid transparent;
   border-bottom: 10px solid #2196F3;
 }
-.contact-box #maya-contact-form .form-group p.reveal {
-  opacity: 1;
-  -webkit-transform: translateY(0);
-  -moz-transform: translateY(0);
-  -ms-transform: translateY(0);
-  -o-transform: translateY(0);
-  transform: translateY(0);
-}
-.contact-box #maya-contact-form #message {
+.form-outer-box .maya-form #message {
   width: 100%;
   height: 100px;
 }
-.contact-box #maya-contact-form .form-submit-box {
+.form-outer-box .maya-form .form-submit-box {
   position: relative;
   width: 100%;
   text-align: center;
 }
-.contact-box #maya-contact-form .form-submit-box #btn-contact {
+.form-outer-box .maya-form .form-submit-box .maya-btn-submit {
   color: #fff;
   background-color: #8bc34a;
   border: none;
 }
-.contact-box #maya-contact-form .form-submit-box #btn-contact:hover, .contact-box #maya-contact-form .form-submit-box #btn-contact:focus {
+.form-outer-box .maya-form .form-submit-box .maya-btn-submit:hover, .form-outer-box .maya-form .form-submit-box .maya-btn-submit:focus {
   background-color: #7eb73d;
 }
-.contact-box #maya-contact-form .form-submit-box .gear {
+.form-outer-box .maya-form .form-submit-box .gear {
   position: absolute;
   left: 0;
   right: 0;
@@ -660,11 +641,11 @@ a:hover, a:focus {
   -o-animation: spin 2s infinite linear;
   animation: spin 2s infinite linear;
 }
-.contact-box #maya-contact-form .alert-message {
+.form-outer-box .maya-form .alert-message {
   margin-top: 10px;
   text-align: center;
 }
-.contact-box #maya-contact-form .alert-message p {
+.form-outer-box .maya-form .alert-message p {
   display: none;
 }
 
@@ -790,6 +771,11 @@ a:hover, a:focus {
 }
 .nav-links > div a:hover, .nav-links > div a:focus {
   color: #0286c2;
+}
+
+.post-content {
+  text-align: justify;
+  padding: 20px;
 }
 
 @media only screen and (min-width: 768px) {
